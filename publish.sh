@@ -15,11 +15,11 @@ npm run build:types
 cp LICENSE build/LICENSE
 cp README.md build/README.md
 node -e "
-	const fs = require('fs');
-	const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
-	delete pkg.devDependencies;
-	delete pkg.scripts;
-	delete pkg['lint-staged'];
-	fs.writeFileSync('./build/package.json', JSON.stringify(pkg, null, 2));
+  const fs = require('fs');
+  const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
+  delete pkg.devDependencies;
+  delete pkg.scripts;
+  delete pkg['lint-staged'];
+  fs.writeFileSync('./build/package.json', JSON.stringify(pkg, null, 2));
 "
 npm publish --access public ./build
