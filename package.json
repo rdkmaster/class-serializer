@@ -1,6 +1,6 @@
 {
   "name": "@rdkmaster/class-serializer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "对象和类之间的序列化和反序列化功能库，源自 https://github.com/typestack/class-transformer",
   "author": "TypeStack contributors and rdkmaster",
   "license": "MIT",
